@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-arabic {
+    font-family: 'Amiri', serif;
+  }
+  .font-serif-luxury {
+    font-family: 'Cinzel', serif;
+  }
+  .font-sans-clean {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+  
+  /* Circular dial masking & realistic glass reflection */
+  .watch-bezel-shadow {
+    box-shadow: 
+      0 0 0 1px rgba(255, 255, 255, 0.08),
+      0 20px 50px -10px rgba(0, 0, 0, 0.9),
+      0 0 35px rgba(212, 175, 55, 0.12),
+      inset 0 2px 4px rgba(255, 255, 255, 0.15),
+      inset 0 -2px 6px rgba(0, 0, 0, 0.8);
+  }
+  
+  .watch-glass-glare {
+    background: linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.14) 0%,
+      rgba(255, 255, 255, 0.03) 40%,
+      transparent 60%,
+      rgba(255, 255, 255, 0.04) 100%
+    );
+  }
+}
+
+/* Custom scrollbars for watch faces and lists */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}

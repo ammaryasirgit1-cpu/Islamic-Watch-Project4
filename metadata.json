@@ -1,0 +1,6 @@
+{
+  "name": "Noor Celestial - Islamic Smartwatch OS",
+  "description": "Luxury Islamic smartwatch operating system and watch faces with astronomical prayer arcs, Hijri calendar, Ramadan mode, and 8 interactive screens.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
